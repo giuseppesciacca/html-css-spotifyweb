@@ -14,7 +14,7 @@ body {
     --color_primary: rgba(20, 25, 34, 1);
     --color_secondary: rgba(40, 40, 40, 1);
     --color_greenlight: rgba(173, 255, 47, 1);
-    --color_greylight: rgba(210, 210, 210, 1);
+    --color_greylight: rgba(125, 127, 132, 1);
     --color_dark: rgba(8, 11, 18, 1);
     --color_darker: rgba(0, 0, 0, 1);
     --color_lighter: rgba(255, 255, 255, 1);
@@ -86,7 +86,7 @@ body {
 .row {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    margin: 0 -0.75rem;
 }
 
 .card {
@@ -129,22 +129,46 @@ a {
     background-color: var(--color_dark);
 }
 
+/* nav */
 #app_main .main_bottom ul {
     justify-content: center;
     align-items: center;
 }
 
 #app_main .main_bottom li {
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 #app_main .main_bottom a {
+    font-size: 0.75rem;
     color: var(--color_greylight);
 }
 
-#app_main .main_bottom [class^=col] {
-    padding-bottom: 1rem;
+/* /nav */
+
+#app_main p.artist {
+    color: var(--color_greylight);
+    font-size: 0.75rem;
+    text-align: center;
 }
+
+#app_main h2,
+#app_main h3.album {
+    margin: 1.5rem 0 2rem 0;
+    color: var(--color_lighter);
+}
+
+#app_main h3.album {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+#app_main .main_bottom [class^=col] {
+    padding: 0.25rem 0;
+}
+
+
 
 
 /* #region FOOTER */
