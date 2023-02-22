@@ -130,10 +130,45 @@ p {
     height: calc(100vh - 90px);
 }
 
+/* sidebar */
 #app_main .sidebar {
     width: 50px;
     background-color: var(--color_darker);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
+
+#app_main .sidebar li {
+    padding: 0.25rem 0;
+}
+
+#app_main .sidebar img {
+    width: 25px;
+}
+
+#app_main .sidebar #download_icon {
+    text-align: center;
+}
+
+#app_main .sidebar #download_icon img {
+    width: 15px;
+}
+
+#app_main .sidebar #user_pic {
+    background-color: var(--color_greylight);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#app_main .sidebar #user_pic img {
+    border-radius: 50%;
+}
+
+
 
 #app_main .main_content {
     width: calc(100% - 50px);
@@ -146,6 +181,9 @@ p {
     background-color: var(--color_dark);
     align-items: center;
     justify-content: end;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 
@@ -163,6 +201,7 @@ p {
 
 #app_main .main_bottom li {
     padding: 1rem;
+    cursor: pointer;
 }
 
 #app_main .main_bottom a {
