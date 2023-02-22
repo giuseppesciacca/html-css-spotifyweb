@@ -178,19 +178,26 @@ p {
 
 /* /recently */
 
-/* create for */
+/* create for and popular artist*/
 
-#app_main #create_for h2 {
+#app_main #create_for h2,
+#app_main #popular_artist h2 {
     margin: 1.5rem 0 0.5rem 0;
 }
 
-#app_main #create_for p {
+/* aggiustare padding sopra h2 popular artist */
+
+#app_main #create_for p,
+#app_main #popular_artist p {
     text-align: left;
     margin-bottom: 0.5rem;
 }
 
+#app_main #popular_artist img {
+    border-radius: 50%;
+}
 
-/* /create for */
+/* /create for and popular artist */
 
 /* #region FOOTER */
 
