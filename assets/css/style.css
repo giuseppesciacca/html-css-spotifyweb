@@ -143,19 +143,26 @@ p {
     padding: 0.25rem 0;
 }
 
+#app_main .sidebar li a {
+    color: var(--color_lighter);
+
+}
+
 #app_main .sidebar img {
     width: 25px;
 }
+
+/* sidebar  XS*/
 
 #app_main .sidebar #download_icon {
     text-align: center;
 }
 
-#app_main .sidebar #download_icon img {
+#app_main .sidebar #xs_sidemenu_bottom #download_icon img {
     width: 15px;
 }
 
-#app_main .sidebar #user_pic {
+#app_main .sidebar #xs_sidemenu_bottom #user_pic {
     background-color: var(--color_greylight);
     border-radius: 50%;
     width: 30px;
@@ -164,9 +171,55 @@ p {
     margin-bottom: 1rem;
 }
 
-#app_main .sidebar #user_pic img {
+#app_main .sidebar #xs_sidemenu_bottom #user_pic img {
     border-radius: 50%;
 }
+
+/* sidebar for BIGGER SCREEN */
+
+#app_main #sidemenu_top {
+    display: none;
+}
+
+#app_main #sidemenu_top #logo_big {
+    padding: 1rem;
+}
+
+#app_main #sidemenu_top #logo_big img {
+    width: 120px;
+}
+
+#app_main .sidebar #sidemenu_top li,
+#app_main .sidebar #sidemenu_bottom li {
+    padding: 0.25rem 1rem;
+}
+
+#app_main #sidemenu_bottom {
+    display: none;
+}
+
+#app_main #playlist_side {
+    display: none;
+}
+
+#app_main #playlist_side h3 {
+    text-align: left;
+    padding: 0.25rem 1rem;
+}
+
+#app_main #add_playlist {
+    color: var(--color_lighter);
+    padding: 0.25rem 1rem;
+}
+
+#app_main #list_playlist li {
+    color: white;
+    padding: 0.75rem 1rem;
+    font-size: 0.75rem;
+}
+
+
+
 
 
 
@@ -185,7 +238,6 @@ p {
     top: 0;
     left: 0;
 }
-
 
 #app_main .main_top a {
     display: inline-block;
@@ -334,10 +386,35 @@ p {
         width: 230px;
     }
 
+    #app_main .sidebar {
+        align-items: start;
+    }
+
+    #app_main #xs_sidemenu_top {
+        display: none;
+    }
+
+    #app_main #xs_sidemenu_bottom {
+        display: none;
+    }
+
+    #app_main #sidemenu_top {
+        display: block;
+    }
+
+    #app_main #sidemenu_bottom {
+        display: block;
+    }
+
+    #app_main #playlist_side {
+        display: block;
+    }
+
     #app_main .main_content {
         width: calc(100% - 230px);
         overflow-y: auto;
     }
+
 }
 
 
