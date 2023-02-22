@@ -20,12 +20,81 @@ body {
     --color_lighter: rgba(255, 255, 255, 1);
 }
 
+/* #region UTILITIES XS COLUMN */
+.col_1 {
+    width: calc(100% / 12 * 1);
+}
+
+.col_2 {
+    width: calc(100% / 12 * 2);
+}
+
+.col_3 {
+    width: calc(100% / 12 * 3);
+}
+
+.col_4 {
+    width: calc(100% / 12 * 4);
+}
+
+.col_5 {
+    width: calc(100% / 12 * 5);
+}
+
+.col_6 {
+    width: 50%;
+}
+
+.col_7 {
+    width: calc(100% / 12 * 7);
+}
+
+.col_8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col_9 {
+    width: calc(100% / 12 * 9);
+}
+
+.col_10 {
+    width: calc(100% / 12 * 10);
+}
+
+.col_11 {
+    width: calc(100% / 12 * 11);
+}
+
+.col_12 {
+    width: 100%;
+}
+
+/* #endregion UTILITIES XS COLUMN */
+
+.container {
+    padding: 0 1rem;
+}
+
 .d_flex {
     display: flex;
 }
 
 .f_wrap {
     flex-wrap: wrap;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.card {
+    padding: 0 0.75rem
+}
+
+img {
+    max-width: 100%;
 }
 
 li {
@@ -71,6 +140,10 @@ a {
 
 #app_main .main_bottom a {
     color: var(--color_greylight);
+}
+
+#app_main .main_bottom [class^=col] {
+    padding-bottom: 1rem;
 }
 
 
@@ -268,56 +341,3 @@ a {
 
     /* #endregion UTILITIES LG_COLUMN */
 }
-
-
-
-/* #region UTILITIES XS COLUMN */
-.col_1 {
-    width: calc(100% / 12 * 1);
-}
-
-.col_2 {
-    width: calc(100% / 12 * 2);
-}
-
-.col_3 {
-    width: calc(100% / 12 * 3);
-}
-
-.col_4 {
-    width: calc(100% / 12 * 4);
-}
-
-.col_5 {
-    width: calc(100% / 12 * 5);
-}
-
-.col_6 {
-    width: 50%;
-}
-
-.col_7 {
-    width: calc(100% / 12 * 7);
-}
-
-.col_8 {
-    width: calc(100% / 12 * 8);
-}
-
-.col_9 {
-    width: calc(100% / 12 * 9);
-}
-
-.col_10 {
-    width: calc(100% / 12 * 10);
-}
-
-.col_11 {
-    width: calc(100% / 12 * 11);
-}
-
-.col_12 {
-    width: 100%;
-}
-
-/* #endregion UTILITIES XS COLUMN */
