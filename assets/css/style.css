@@ -5,52 +5,77 @@
 }
 
 /* #region COMMON and Utilities */
+
+:root {
+    --color_primary: rgba(20, 25, 34, 1);
+    --color_secondary: rgba(40, 40, 40, 1);
+    --color_greenlight: rgba(173, 255, 47, 1);
+    --color_greylight: rgba(210, 210, 210, 1);
+    --color_dark: rgba(8, 11, 18, 1);
+    --color_darker: rgba(0, 0, 0, 1);
+    --color_lighter: rgba(255, 255, 255, 1);
+}
+
 .d_flex {
     display: flex;
 }
 
+/* #endregion COMMON and Utilities */
 
 
 /* #region MAIN */
 #app_main {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 90px);
 }
 
 #app_main .sidebar {
-    width: 70px;
+    width: 50px;
+    background-color: var(--color_darker);
 }
 
 #app_main .main_content {
-    width: calc(100% - 70px);
+    width: calc(100% - 50px);
     overflow-y: auto;
+    background-color: var(--color_primary);
 }
 
 
 /* #region FOOTER */
 
 #app_footer {
-    height: 70px;
+    height: 90px;
+    background-color: var(--color_secondary);
 }
 
 
 /* #region DEBUG */
 
 .debug * {
-    border: 1px dashed black;
+    border: 1px dashed white;
 }
 
-.debug #app_main {
-    background-color: coral;
+/* #endregion DEBUG */
+
+
+/* #region MEDIA SCREEN */
+
+/* landscape smartphone */
+@media screen and (min-width: 568px) {
+    #app_main .sidebar {
+        width: 230px;
+    }
+
+    #app_main .main_content {
+        width: calc(100% - 230px);
+        overflow-y: auto;
+    }
+
 }
 
-.debug #app_main .sidebar {
-    background-color: blueviolet;
-}
 
-.debug #app_main .main_content {
-    background-color: firebrick;
-}
+/* tablet */
+@media screen and (min-width: 768px) {}
 
-.debug #app_footer {
-    background-color: aqua;
-}
+
+/* desktop */
+@media screen and (min-width: 1200px) {}
