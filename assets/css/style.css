@@ -105,6 +105,16 @@ a {
     text-decoration: none;
 }
 
+h2,
+h3 {
+    color: var(--color_lighter);
+}
+
+p {
+    color: var(--color_greylight);
+    font-size: 0.75rem;
+}
+
 /* #endregion COMMON and Utilities */
 
 
@@ -146,30 +156,41 @@ a {
 
 /* /nav */
 
+/* recently */
+#app_main .main_bottom [class^=col] {
+    padding: 0.25rem 0;
+}
+
 #app_main p.artist {
-    color: var(--color_greylight);
-    font-size: 0.75rem;
     text-align: center;
 }
 
-#app_main h2,
-#app_main h3.album {
-    margin: 1.5rem 0 2rem 0;
-    color: var(--color_lighter);
+#app_main #recently h2,
+#app_main h3 {
+    margin: 0.75rem 0 2rem 0;
 }
 
-#app_main h3.album {
+#app_main h3 {
     font-size: 1rem;
     text-align: center;
     margin-bottom: 0.5rem;
 }
 
-#app_main .main_bottom [class^=col] {
-    padding: 0.25rem 0;
+/* /recently */
+
+/* create for */
+
+#app_main #create_for h2 {
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+#app_main #create_for p {
+    text-align: left;
+    margin-bottom: 0.5rem;
 }
 
 
-
+/* /create for */
 
 /* #region FOOTER */
 
