@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* #region COMMON and Utilities */
+.d_flex {
+    display: flex;
+}
+
+
+
+/* #region MAIN */
+#app_main {
+    height: calc(100vh - 70px);
+}
+
+#app_main .sidebar {
+    width: 70px;
+}
+
+#app_main .main_content {
+    width: calc(100% - 70px);
+    overflow-y: auto;
+}
+
+
+/* #region FOOTER */
+
+#app_footer {
+    height: 70px;
+}
+
+
+/* #region DEBUG */
+
+.debug * {
+    border: 1px dashed black;
+}
+
+.debug #app_main {
+    background-color: coral;
+}
+
+.debug #app_main .sidebar {
+    background-color: blueviolet;
+}
+
+.debug #app_main .main_content {
+    background-color: firebrick;
+}
+
+.debug #app_footer {
+    background-color: aqua;
+}
