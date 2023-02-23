@@ -126,9 +126,6 @@ p {
 
 
 /* #region MAIN */
-#app_main {
-    height: calc(100vh - 90px);
-}
 
 /* sidebar */
 #app_main .sidebar {
@@ -225,11 +222,10 @@ p {
 
 #app_main .main_content {
     width: calc(100% - 50px);
-    overflow-y: auto;
     background-color: var(--color_primary);
 }
 
-/* main-top */
+/* banner */
 
 #app_main .banner {
     height: 90px;
@@ -247,7 +243,13 @@ p {
     font-size: 0.75rem;
 }
 
-/* nav */
+/* nav - menu center */
+
+#app_main .main_bottom {
+    height: calc(100vh - 90px - 90px);
+    overflow-y: auto;
+}
+
 #app_main .main_bottom ul {
     justify-content: center;
     align-items: center;
@@ -414,7 +416,6 @@ p {
 
     #app_main .main_content {
         width: calc(100% - 230px);
-        overflow-y: auto;
     }
 
 }
