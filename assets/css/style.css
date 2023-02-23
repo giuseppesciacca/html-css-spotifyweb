@@ -346,6 +346,9 @@ p {
     margin: 0;
     align-items: center;
     height: 100%;
+}
+
+#app_footer .record_play .row {
     flex-wrap: nowrap;
 }
 
@@ -361,12 +364,46 @@ p {
     flex-direction: column;
 }
 
-#app_footer .save i {
+
+#app_footer i {
     color: var(--color_lighter);
+
+}
+
+#app_footer .save i {
     padding: 0.25rem 0 0.25rem 1rem;
     scale: 1.2;
 }
 
+.command_player {
+    justify-content: center;
+    align-items: center;
+}
+
+.command_player i {
+    padding: 0 0.75rem;
+}
+
+.bar_time {
+    color: var(--color_lighter);
+    align-items: center;
+    padding-top: 0.75rem;
+}
+
+.bar_time #total_bar {
+    width: 100%;
+    height: 4px;
+    background-color: var(--color_greylight);
+    border-radius: 2rem;
+    margin: 0 0.25rem;
+}
+
+.bar_time #time_passed {
+    width: 25%;
+    background-color: var(--color_lighter);
+    height: 4px;
+    border-radius: 2rem;
+}
 
 
 /* #endregion FOOTER */
