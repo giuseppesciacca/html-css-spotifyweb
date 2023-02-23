@@ -346,6 +346,8 @@ p {
     margin: 0;
     align-items: center;
     height: 100%;
+    justify-content: space-around;
+    flex-wrap: nowrap;
 }
 
 #app_footer .record_play .row {
@@ -382,6 +384,14 @@ p {
 
 .command_player i {
     padding: 0 0.75rem;
+}
+
+.save,
+.command_player .fa-shuffle,
+.command_player .fa-rotate-right,
+.fa-list,
+.fa-desktop {
+    display: none;
 }
 
 .bar_time {
@@ -536,6 +546,14 @@ p {
     #app_main .sidebar .download_icon,
     #app_main .sidebar .side_menu_bottom .user_pic {
         text-align: left;
+    }
+
+    .save,
+    .command_player .fa-shuffle,
+    .command_player .fa-rotate-right,
+    .fa-list,
+    .fa-desktop {
+        display: block;
     }
 
 }
