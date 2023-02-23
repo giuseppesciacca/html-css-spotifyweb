@@ -131,6 +131,7 @@ p {
 
 #app_main .sidebar {
     width: 50px;
+    min-height: 90px;
     height: calc(100vh - 90px);
     background-color: var(--color_darker);
     flex-direction: column;
@@ -245,9 +246,6 @@ p {
     background-color: var(--color_dark);
     align-items: center;
     justify-content: end;
-    position: sticky;
-    top: 0;
-    left: 0;
 }
 
 #app_main .banner a {
