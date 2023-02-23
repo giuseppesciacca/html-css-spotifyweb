@@ -409,7 +409,7 @@ p {
 
 .settings {
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .settings i {
@@ -419,6 +419,7 @@ p {
 
 .settings #vol {
     width: 100%;
+    max-width: 100px;
     height: 4px;
     background-color: var(--color_greylight);
     border-radius: 2rem;
