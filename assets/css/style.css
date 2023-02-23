@@ -154,15 +154,15 @@ p {
 
 /* sidebar  XS*/
 
-#app_main .sidebar #download_icon {
+#app_main .sidebar .download_icon {
     text-align: center;
 }
 
-#app_main .sidebar #xs_sidemenu_bottom #download_icon img {
+#app_main .sidebar #xs_sidemenu_bottom .download_icon img {
     width: 15px;
 }
 
-#app_main .sidebar #xs_sidemenu_bottom #user_pic {
+#app_main .sidebar #xs_sidemenu_bottom .user_pic {
     background-color: var(--color_greylight);
     border-radius: 50%;
     width: 30px;
@@ -171,7 +171,7 @@ p {
     margin-bottom: 1rem;
 }
 
-#app_main .sidebar #xs_sidemenu_bottom #user_pic img {
+#app_main .sidebar #xs_sidemenu_bottom .user_pic img {
     border-radius: 50%;
 }
 
@@ -221,7 +221,7 @@ p {
 
 
 
-
+/* app_main main-content */
 
 #app_main .main_content {
     width: calc(100% - 50px);
@@ -229,7 +229,9 @@ p {
     background-color: var(--color_primary);
 }
 
-#app_main .main_top {
+/* main-top */
+
+#app_main .banner {
     height: 90px;
     background-color: var(--color_dark);
     align-items: center;
@@ -239,7 +241,7 @@ p {
     left: 0;
 }
 
-#app_main .main_top a {
+#app_main .banner a {
     display: inline-block;
     margin-right: 0.6rem;
     font-size: 0.75rem;
