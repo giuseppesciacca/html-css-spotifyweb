@@ -156,8 +156,13 @@ p {
     padding: 0.25rem 0;
 }
 
-#app_main .sidebar li a {
+#app_main .sidebar li:hover a {
     color: var(--color_lighter);
+    cursor: pointer;
+}
+
+#app_main .sidebar li a {
+    color: var(--color_greylight);
 }
 
 #app_main .sidebar img {
@@ -225,8 +230,13 @@ p {
 }
 
 #app_main #add_playlist {
-    color: var(--color_lighter);
+    color: var(--color_greylight);
     padding: 0.25rem 1rem;
+}
+
+#app_main #add_playlist:hover {
+    color: var(--color_lighter);
+    cursor: pointer;
 }
 
 #app_main #list_playlist {
@@ -236,9 +246,14 @@ p {
 }
 
 #app_main #list_playlist li {
-    color: white;
+    color: var(--color_greylight);
     padding: 0.75rem 1rem;
     font-size: 0.75rem;
+}
+
+#app_main #list_playlist li:hover {
+    color: var(--color_lighter);
+    cursor: pointer;
 }
 
 /* #endregion aside */
@@ -305,10 +320,21 @@ p {
 
 /* /nav */
 
-/* recently */
 #app_main .main_bottom [class^=col] {
     padding: 0.25rem 0;
 }
+
+#app_main .main_bottom img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#app_main .card p,
+#app_main .card h3 {
+    cursor: pointer;
+}
+
+/* recently */
 
 #app_main p.artist {
     text-align: center;
