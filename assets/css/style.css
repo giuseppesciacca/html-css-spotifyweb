@@ -340,6 +340,7 @@ p {
     height: 90px;
     background-color: var(--color_secondary);
     font-size: 0.75rem;
+    min-width: 300px;
 }
 
 #app_footer .row {
@@ -350,14 +351,20 @@ p {
     flex-wrap: nowrap;
 }
 
+#app_footer .footer_left {
+    align-items: center;
+    justify-content: start;
+}
+
 #app_footer .record_play .row {
     flex-wrap: nowrap;
 }
 
-.record_play img {
-    padding-left: 0.25rem;
-    padding-right: 0.5rem;
+.record_play #record_image {
+    width: 30px;
     height: 30px;
+    margin-left: 0.25rem;
+    margin-right: 0.5rem;
 }
 
 .save {
@@ -366,14 +373,12 @@ p {
     flex-direction: column;
 }
 
-
 #app_footer i {
     color: var(--color_lighter);
-
 }
 
 #app_footer .save i {
-    padding: 0.25rem 0 0.25rem 1rem;
+    padding: 0.25rem;
     scale: 1.2;
 }
 
@@ -456,6 +461,18 @@ p {
 
 
 /* #region MEDIA SCREEN */
+
+/* extra small screen */
+@media screen and (min-width: 480px) {
+
+    .save,
+    .command_player .fa-shuffle,
+    .command_player .fa-rotate-right,
+    .fa-list,
+    .fa-desktop {
+        display: block;
+    }
+}
 
 /* landscape smartphone */
 @media screen and (min-width: 568px) {
@@ -547,15 +564,6 @@ p {
     #app_main .sidebar .side_menu_bottom .user_pic {
         text-align: left;
     }
-
-    .save,
-    .command_player .fa-shuffle,
-    .command_player .fa-rotate-right,
-    .fa-list,
-    .fa-desktop {
-        display: block;
-    }
-
 }
 
 
@@ -617,8 +625,16 @@ p {
         flex-direction: row;
     }
 
-    .record_play img {
+    .record_play #record_image {
+        width: 40px;
         height: 40px;
+        margin-left: 0.25rem;
+        margin-right: 0.5rem;
+    }
+
+    #app_footer .save i {
+        padding: 0 0.5rem;
+        scale: 1.2;
     }
 }
 
