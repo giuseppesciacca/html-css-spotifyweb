@@ -417,6 +417,11 @@ p {
 }
 
 #app_footer i {
+    color: var(--color_greylight);
+    cursor: pointer;
+}
+
+#app_footer i:hover {
     color: var(--color_lighter);
 }
 
@@ -432,6 +437,14 @@ p {
 
 .command_player i {
     padding: 0 0.75rem;
+}
+
+.command_player i:active {
+    color: var(--color_greylight) !important;
+}
+
+.command_player .fa-circle-play {
+    color: var(--color_lighter) !important;
 }
 
 .save,
@@ -456,6 +469,7 @@ p {
     background-color: var(--color_greylight);
     border-radius: 2rem;
     margin: 0 0.25rem;
+    cursor: pointer;
 }
 
 .bar_time #time_passed {
@@ -463,6 +477,10 @@ p {
     background-color: var(--color_lighter);
     height: 4px;
     border-radius: 2rem;
+}
+
+.bar_time #total_bar:hover #time_passed {
+    background-color: var(--color_greenlight);
 }
 
 .settings {
@@ -473,6 +491,7 @@ p {
 .settings i {
     padding: 0 0.5rem;
     scale: 1.2;
+    cursor: pointer;
 }
 
 .settings #vol {
@@ -482,6 +501,7 @@ p {
     background-color: var(--color_greylight);
     border-radius: 2rem;
     margin: 0 0.25rem;
+    cursor: pointer;
 }
 
 .settings #actual_vol {
@@ -489,6 +509,10 @@ p {
     background-color: var(--color_lighter);
     height: 4px;
     border-radius: 2rem;
+}
+
+.settings #vol:hover #actual_vol {
+    background-color: var(--color_greenlight);
 }
 
 /* #endregion FOOTER */
