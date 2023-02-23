@@ -128,6 +128,7 @@ p {
 /* #region MAIN */
 
 /* sidebar */
+
 #app_main .sidebar {
     width: 50px;
     background-color: var(--color_darker);
@@ -142,11 +143,15 @@ p {
 
 #app_main .sidebar li a {
     color: var(--color_lighter);
-
 }
 
 #app_main .sidebar img {
     width: 25px;
+}
+
+#app_main .side_menu_bottom {
+    /* height: 85px; */
+    width: 100%;
 }
 
 /* sidebar  XS*/
@@ -159,17 +164,15 @@ p {
     width: 15px;
 }
 
-#app_main .sidebar #xs_sidemenu_bottom .user_pic {
-    background-color: var(--color_greylight);
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
+#app_main .sidebar .side_menu_bottom .user_pic {
     text-align: center;
-    margin-bottom: 1rem;
 }
 
-#app_main .sidebar #xs_sidemenu_bottom .user_pic img {
+#app_main .sidebar .side_menu_bottom .user_pic img {
     border-radius: 50%;
+    background-color: gray;
+    aspect-ratio: 1 / 1;
+    width: 30px;
 }
 
 /* sidebar for BIGGER SCREEN */
@@ -192,6 +195,7 @@ p {
 }
 
 #app_main #sidemenu_bottom {
+    /* cambiare nome id */
     display: none;
 }
 
@@ -214,8 +218,6 @@ p {
     padding: 0.75rem 1rem;
     font-size: 0.75rem;
 }
-
-
 
 
 /* app_main main-content */
@@ -316,6 +318,9 @@ p {
 #app_footer {
     height: 90px;
     background-color: var(--color_secondary);
+    /*     position: sticky;
+    top: 0;
+    left: 0; */
 }
 
 /* #endregion FOOTER */
@@ -416,6 +421,11 @@ p {
 
     #app_main .main_content {
         width: calc(100% - 230px);
+    }
+
+    #app_main .sidebar .download_icon,
+    #app_main .sidebar .side_menu_bottom .user_pic {
+        text-align: left;
     }
 
 }
@@ -531,3 +541,5 @@ p {
 
     /* #endregion UTILITIES LG_COLUMN */
 }
+
+/* #endregion MEDIA SCREEN */
