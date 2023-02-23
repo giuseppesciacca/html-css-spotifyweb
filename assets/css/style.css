@@ -122,6 +122,14 @@ p {
     border-radius: 2rem;
 }
 
+.w_40 {
+    width: 40%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
 /* #endregion COMMON and Utilities */
 
 
@@ -331,10 +339,34 @@ p {
 #app_footer {
     height: 90px;
     background-color: var(--color_secondary);
-    /*     position: sticky;
-    top: 0;
-    left: 0; */
+    font-size: 0.75rem;
 }
+
+.row {
+    margin: 0;
+    align-items: center;
+    height: 100%;
+}
+
+.record_play img {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    height: 30px;
+}
+
+.save {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#app_footer .save i {
+    color: var(--color_lighter);
+    padding: 0.25rem;
+    scale: 1.2;
+}
+
+
 
 /* #endregion FOOTER */
 
@@ -497,6 +529,10 @@ p {
     }
 
     /* #endregion UTILITIES MD_COLUMN */
+
+    .save {
+        flex-direction: row;
+    }
 }
 
 
