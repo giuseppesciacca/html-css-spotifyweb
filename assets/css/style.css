@@ -122,6 +122,10 @@ p {
     border-radius: 2rem;
 }
 
+.btn:hover {
+    scale: 1.1;
+}
+
 .w_40 {
     width: 40%;
 }
@@ -258,7 +262,7 @@ p {
 
 #app_main .banner a {
     display: inline-block;
-    margin-right: 0.6rem;
+    margin-right: 0.75rem;
     font-size: 0.75rem;
 }
 
@@ -281,9 +285,22 @@ p {
     cursor: pointer;
 }
 
+#app_main #evidence::after {
+    display: block;
+    content: "";
+    background-color: var(--color_greenlight);
+    width: 50%;
+    height: 2px;
+    margin: auto;
+}
+
 #app_main .main_bottom a {
     font-size: 0.75rem;
     color: var(--color_greylight);
+}
+
+#app_main .main_bottom li:hover a {
+    color: var(--color_lighter);
 }
 
 /* /nav */
