@@ -127,14 +127,16 @@ p {
 
 /* #region MAIN */
 
-/* sidebar */
+/* #region aside */
 
 #app_main .sidebar {
     width: 50px;
+    height: calc(100vh - 90px);
     background-color: var(--color_darker);
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
 #app_main .sidebar li {
@@ -150,7 +152,7 @@ p {
 }
 
 #app_main .side_menu_bottom {
-    /* height: 85px; */
+    height: 85px;
     width: 100%;
 }
 
@@ -160,7 +162,7 @@ p {
     text-align: center;
 }
 
-#app_main .sidebar #xs_sidemenu_bottom .download_icon img {
+#app_main .sidebar .side_menu_bottom .download_icon img {
     width: 15px;
 }
 
@@ -201,6 +203,7 @@ p {
 
 #app_main #playlist_side {
     display: none;
+    width: 230px;
 }
 
 #app_main #playlist_side h3 {
@@ -213,21 +216,29 @@ p {
     padding: 0.25rem 1rem;
 }
 
+#app_main #list_playlist {
+    height: calc(100vh - 470px);
+    overflow-y: auto;
+    margin-top: 1rem;
+}
+
 #app_main #list_playlist li {
     color: white;
     padding: 0.75rem 1rem;
     font-size: 0.75rem;
 }
 
+/* #endregion aside */
 
-/* app_main main-content */
+
+/* #region app_main main-content */
 
 #app_main .main_content {
     width: calc(100% - 50px);
     background-color: var(--color_primary);
 }
 
-/* banner */
+/* #region banner */
 
 #app_main .banner {
     height: 90px;
@@ -244,6 +255,8 @@ p {
     margin-right: 0.6rem;
     font-size: 0.75rem;
 }
+
+/* #endregion banner */
 
 /* nav - menu center */
 
@@ -311,6 +324,8 @@ p {
 }
 
 /* /create for and popular artist */
+/* #endregion app_main main-content */
+
 /* #endregion MAIN */
 
 /* #region FOOTER */
