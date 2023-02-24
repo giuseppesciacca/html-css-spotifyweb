@@ -170,7 +170,7 @@ li.logo img {
 }
 
 #xs_sidemenu_top .logo img {
-    padding-top: 0.25rem;
+    padding-top: 0.5rem;
 }
 
 #app_main .sidenav li:hover a,
@@ -186,6 +186,23 @@ li.logo img {
     scale: 0.98;
 }
 
+#app_main #sidemenu_top {
+    display: none;
+}
+
+#app_main #sidemenu_top #logo_big {
+    padding: 1rem;
+}
+
+#app_main #sidemenu_top #logo_big img {
+    width: 120px;
+}
+
+#app_main .sidenav #sidemenu_top li,
+#app_main .sidenav #sidemenu_bottom li {
+    padding: 0.25rem 1rem;
+}
+
 #app_main .sidenav li a {
     color: var(--color_greylight);
 }
@@ -197,12 +214,51 @@ li.logo img {
     vertical-align: bottom;
 }
 
+#app_main #playlist {
+    display: none;
+    width: 230px;
+}
+
+#app_main #playlist h3 {
+    text-align: left;
+    padding: 0.25rem 1rem;
+}
+
+#app_main #add_playlist {
+    color: var(--color_greylight);
+    padding: 0.25rem 1rem;
+    align-items: center;
+}
+
+#app_main #add_playlist i {
+    padding-right: 0.5rem;
+}
+
+#app_main #add_playlist:hover {
+    color: var(--color_lighter);
+    cursor: pointer;
+}
+
+#app_main #list_playlist {
+    height: calc(100vh - 470px);
+    overflow-y: auto;
+    margin-top: 1rem;
+}
+
+#app_main #list_playlist li {
+    color: var(--color_greylight);
+    padding: 0.5rem 1rem;
+}
+
+#app_main #list_playlist li:hover {
+    color: var(--color_lighter);
+    cursor: pointer;
+}
+
 #app_main .sidenav_bottom {
     height: 85px;
     width: 100%;
 }
-
-/* sidenav  XS*/
 
 #app_main .sidenav .sidenav_bottom .download_icon {
     text-align: center;
@@ -233,69 +289,8 @@ li.logo img {
     align-items: center;
 }
 
-/* sidenav for BIGGER SCREEN */
-
-#app_main #sidemenu_top {
-    display: none;
-}
-
-#app_main #sidemenu_top #logo_big {
-    padding: 1rem;
-}
-
-#app_main #sidemenu_top #logo_big img {
-    width: 120px;
-}
-
-#app_main .sidenav #sidemenu_top li,
-#app_main .sidenav #sidemenu_bottom li {
-    padding: 0.25rem 1rem;
-}
-
 #app_main #sidemenu_bottom {
     display: none;
-}
-
-#app_main #playlist {
-    display: none;
-    width: 230px;
-}
-
-#app_main #playlist h3 {
-    text-align: left;
-    padding: 0.25rem 1rem;
-}
-
-#app_main #add_playlist {
-    color: var(--color_greylight);
-    padding: 0.25rem 1rem;
-    align-items: center;
-}
-
-#app_main #add_playlist i {
-    padding-right: 0.5rem;
-}
-
-
-#app_main #add_playlist:hover {
-    color: var(--color_lighter);
-    cursor: pointer;
-}
-
-#app_main #list_playlist {
-    height: calc(100vh - 470px);
-    overflow-y: auto;
-    margin-top: 1rem;
-}
-
-#app_main #list_playlist li {
-    color: var(--color_greylight);
-    padding: 0.5rem 1rem;
-}
-
-#app_main #list_playlist li:hover {
-    color: var(--color_lighter);
-    cursor: pointer;
 }
 
 /* #endregion aside */
