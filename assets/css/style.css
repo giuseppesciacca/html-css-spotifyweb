@@ -385,6 +385,12 @@ p {
     min-width: 300px;
 }
 
+#app_footer a h3:hover,
+#app_footer a p:hover {
+    text-decoration: underline;
+    color: var(--color_lighter);
+}
+
 #app_footer .row {
     margin: 0;
     align-items: center;
@@ -443,6 +449,11 @@ p {
 }
 
 .command_player .fa-circle-play {
+    color: var(--color_lighter) !important;
+}
+
+.command_player .fa-circle-play:active {
+    scale: 0.9;
     color: var(--color_lighter) !important;
 }
 
@@ -665,7 +676,6 @@ p {
     }
 }
 
-
 /* tablet */
 @media screen and (min-width: 768px) {
 
@@ -736,7 +746,6 @@ p {
         scale: 1.2;
     }
 }
-
 
 /* desktop */
 @media screen and (min-width: 1200px) {
