@@ -196,16 +196,12 @@ li.logo img {
 
 /* sidebar  XS*/
 
-#app_main .sidebar .download_icon {
-    text-align: center;
+#app_main .sidebar .side_menu_bottom .download_icon a {
+    align-items: center;
 }
 
 #app_main .sidebar .side_menu_bottom .download_icon img {
     width: 15px;
-}
-
-#app_main .sidebar .side_menu_bottom .user_pic {
-    text-align: center;
 }
 
 #app_main .sidebar .side_menu_bottom .user_pic img {
@@ -354,9 +350,25 @@ li.logo img {
     padding: 0.25rem 0;
 }
 
-#app_main .main_bottom img:hover {
+#app_main .main_bottom .picture {
+    position: relative;
+    align-items: center;
+}
+
+#app_main .main_bottom .picture i {
+    color: var(--color_lighter);
+    position: absolute;
+    left: 39%;
+    display: none;
+}
+
+#app_main .main_bottom .picture:hover img {
     opacity: 0.6;
     cursor: pointer;
+}
+
+#app_main .main_bottom .picture:hover i {
+    display: block;
 }
 
 #app_main .card p,
