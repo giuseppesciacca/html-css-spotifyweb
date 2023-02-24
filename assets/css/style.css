@@ -196,12 +196,20 @@ li.logo img {
 
 /* sidebar  XS*/
 
+#app_main .sidebar .side_menu_bottom .download_icon {
+    text-align: center;
+}
+
 #app_main .sidebar .side_menu_bottom .download_icon a {
     align-items: center;
 }
 
 #app_main .sidebar .side_menu_bottom .download_icon img {
     width: 15px;
+}
+
+#app_main .sidebar .side_menu_bottom .user_pic {
+    text-align: center;
 }
 
 #app_main .sidebar .side_menu_bottom .user_pic img {
