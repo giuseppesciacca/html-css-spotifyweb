@@ -73,6 +73,7 @@ body {
 
 .container {
     padding: 0 1rem;
+    max-width: 1920px;
 }
 
 .d_flex {
