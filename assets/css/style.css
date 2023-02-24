@@ -148,7 +148,7 @@ p {
 
 /* #region aside */
 
-#app_main .sidebar {
+#app_main .sidenav {
     width: 50px;
     min-height: 90px;
     height: calc(100vh - 90px);
@@ -159,7 +159,7 @@ p {
     overflow: hidden;
 }
 
-#app_main .sidebar li {
+#app_main .sidenav li {
     padding: 0.25rem 0;
     font-size: 0.9rem;
 }
@@ -173,54 +173,54 @@ li.logo img {
     padding-top: 0.25rem;
 }
 
-#app_main .sidebar li:hover a,
-#app_main .sidebar li:hover img {
+#app_main .sidenav li:hover a,
+#app_main .sidenav li:hover img {
     color: var(--color_lighter);
     cursor: pointer;
     opacity: 1;
 }
 
-#app_main .sidebar li.home:active,
-#app_main .sidebar li.search:active,
-#app_main .sidebar li.library:active {
+#app_main .sidenav li.home:active,
+#app_main .sidenav li.search:active,
+#app_main .sidenav li.library:active {
     scale: 0.98;
 }
 
-#app_main .sidebar li a {
+#app_main .sidenav li a {
     color: var(--color_greylight);
 }
 
-#app_main .sidebar img {
+#app_main .sidenav img {
     width: 25px;
     opacity: 0.5;
     margin-right: 0.5rem;
     vertical-align: bottom;
 }
 
-#app_main .side_menu_bottom {
+#app_main .sidenav_bottom {
     height: 85px;
     width: 100%;
 }
 
-/* sidebar  XS*/
+/* sidenav  XS*/
 
-#app_main .sidebar .side_menu_bottom .download_icon {
+#app_main .sidenav .sidenav_bottom .download_icon {
     text-align: center;
 }
 
-#app_main .sidebar .side_menu_bottom .download_icon a {
+#app_main .sidenav .sidenav_bottom .download_icon a {
     align-items: center;
 }
 
-#app_main .sidebar .side_menu_bottom .download_icon img {
+#app_main .sidenav .sidenav_bottom .download_icon img {
     width: 15px;
 }
 
-#app_main .sidebar .side_menu_bottom .user_pic {
+#app_main .sidenav .sidenav_bottom .user_pic {
     text-align: center;
 }
 
-#app_main .sidebar .side_menu_bottom .user_pic img {
+#app_main .sidenav .sidenav_bottom .user_pic img {
     border-radius: 50%;
     background-color: gray;
     aspect-ratio: 1 / 1;
@@ -228,12 +228,12 @@ li.logo img {
     opacity: 1;
 }
 
-#app_main .sidebar li.user_pic a {
+#app_main .sidenav li.user_pic a {
     color: var(--color_lighter);
     align-items: center;
 }
 
-/* sidebar for BIGGER SCREEN */
+/* sidenav for BIGGER SCREEN */
 
 #app_main #sidemenu_top {
     display: none;
@@ -247,22 +247,21 @@ li.logo img {
     width: 120px;
 }
 
-#app_main .sidebar #sidemenu_top li,
-#app_main .sidebar #sidemenu_bottom li {
+#app_main .sidenav #sidemenu_top li,
+#app_main .sidenav #sidemenu_bottom li {
     padding: 0.25rem 1rem;
 }
 
 #app_main #sidemenu_bottom {
-    /* cambiare nome id */
     display: none;
 }
 
-#app_main #playlist_side {
+#app_main #playlist {
     display: none;
     width: 230px;
 }
 
-#app_main #playlist_side h3 {
+#app_main #playlist h3 {
     text-align: left;
     padding: 0.25rem 1rem;
 }
@@ -303,7 +302,7 @@ li.logo img {
 
 /* #region app_main main-content */
 
-#app_main .main_content {
+#app_main .content {
     width: calc(100% - 50px);
     background-color: var(--color_primary);
 }
@@ -327,17 +326,17 @@ li.logo img {
 
 /* nav - menu center */
 
-#app_main .main_bottom {
+#app_main .main_content {
     height: calc(100vh - 90px - 90px);
     overflow-y: auto;
 }
 
-#app_main .main_bottom ul {
+#app_main .main_content ul {
     justify-content: center;
     align-items: center;
 }
 
-#app_main .main_bottom li {
+#app_main .main_content li {
     padding: 1rem;
     cursor: pointer;
 }
@@ -351,26 +350,26 @@ li.logo img {
     margin: auto;
 }
 
-#app_main .main_bottom a {
+#app_main .main_content a {
     font-size: 0.75rem;
     color: var(--color_greylight);
 }
 
-#app_main .main_bottom li:hover a {
+#app_main .main_content li:hover a {
     color: var(--color_lighter);
 }
 
 /* /nav */
 
-#app_main .main_bottom [class^=col] {
+#app_main .main_content [class^=col] {
     padding: 0.25rem 0;
 }
 
-#app_main .main_bottom .picture {
+#app_main .main_content .picture {
     position: relative;
 }
 
-#app_main .main_bottom .picture i {
+#app_main .main_content .picture i {
     color: var(--color_lighter);
     position: absolute;
     top: 50%;
@@ -380,12 +379,12 @@ li.logo img {
     cursor: pointer;
 }
 
-#app_main .main_bottom .picture:hover img {
+#app_main .main_content .picture:hover img {
     opacity: 0.6;
     cursor: pointer;
 }
 
-#app_main .main_bottom .picture:hover i {
+#app_main .main_content .picture:hover i {
     display: block;
 }
 
@@ -703,11 +702,11 @@ li.logo img {
 
     /* #endregion UTILITIES S_COLUMN */
 
-    #app_main .sidebar {
+    #app_main .sidenav {
         width: 230px;
     }
 
-    #app_main .sidebar {
+    #app_main .sidenav {
         align-items: start;
     }
 
@@ -727,16 +726,16 @@ li.logo img {
         display: block;
     }
 
-    #app_main #playlist_side {
+    #app_main #playlist {
         display: block;
     }
 
-    #app_main .main_content {
+    #app_main .content {
         width: calc(100% - 230px);
     }
 
-    #app_main .sidebar .download_icon,
-    #app_main .sidebar .side_menu_bottom .user_pic {
+    #app_main .sidenav .download_icon,
+    #app_main .sidenav .sidenav_bottom .user_pic {
         text-align: left;
     }
 }
@@ -744,7 +743,7 @@ li.logo img {
 /* small height */
 @media screen and (max-height: 520px) {
 
-    #app_main #playlist_side {
+    #app_main #playlist {
         display: none;
     }
 }
