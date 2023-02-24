@@ -126,6 +126,10 @@ p {
     scale: 1.1;
 }
 
+.btn:active {
+    scale: 1;
+}
+
 .w_40 {
     width: 40%;
 }
@@ -256,7 +260,6 @@ p {
 }
 
 /* #endregion aside */
-
 
 /* #region app_main main-content */
 
