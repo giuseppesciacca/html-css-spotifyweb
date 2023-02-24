@@ -172,6 +172,12 @@ li.logo img {
     opacity: 1;
 }
 
+#app_main .sidebar li.home:active,
+#app_main .sidebar li.search:active,
+#app_main .sidebar li.library:active {
+    scale: 0.98;
+}
+
 #app_main .sidebar li a {
     color: var(--color_greylight);
 }
