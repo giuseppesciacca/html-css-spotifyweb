@@ -136,7 +136,6 @@ p {
 
 /* #endregion COMMON and Utilities */
 
-
 /* #region MAIN */
 
 /* #region aside */
@@ -477,6 +476,24 @@ p {
     background-color: var(--color_lighter);
     height: 4px;
     border-radius: 2rem;
+    position: relative;
+}
+
+.bar_time #time_passed::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--color_lighter);
+    display: block;
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    display: none;
+}
+
+.bar_time #total_bar:hover #time_passed::after {
+    display: block;
 }
 
 .bar_time #total_bar:hover #time_passed {
@@ -509,14 +526,30 @@ p {
     background-color: var(--color_lighter);
     height: 4px;
     border-radius: 2rem;
+    position: relative;
+}
+
+#vol #actual_vol::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--color_lighter);
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    display: none;
 }
 
 .settings #vol:hover #actual_vol {
     background-color: var(--color_greenlight);
 }
 
-/* #endregion FOOTER */
+.settings #vol:hover #actual_vol::after {
+    display: block;
+}
 
+/* #endregion FOOTER */
 
 /* #region DEBUG */
 
@@ -525,7 +558,6 @@ p {
 }
 
 /* #endregion DEBUG */
-
 
 /* #region MEDIA SCREEN */
 
