@@ -142,6 +142,10 @@ p {
 
 /* #region MAIN */
 
+#app_main {
+    min-width: 300px;
+}
+
 /* #region aside */
 
 #app_main .sidebar {
@@ -152,9 +156,7 @@ p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* overflow: hidden; */
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 #app_main .sidebar li {
@@ -740,7 +742,7 @@ li.logo img {
 }
 
 /* small height */
-@media screen and (max-height: 520px), (orientation:landscape) {
+@media screen and (max-height: 520px) {
 
     #app_main #playlist_side {
         display: none;
