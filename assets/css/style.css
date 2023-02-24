@@ -165,6 +165,10 @@ li.logo img {
     cursor: auto !important;
 }
 
+#xs_sidemenu_top .logo img {
+    padding-top: 0.25rem;
+}
+
 #app_main .sidebar li:hover a,
 #app_main .sidebar li:hover img {
     color: var(--color_lighter);
@@ -366,8 +370,11 @@ li.logo img {
 #app_main .main_bottom .picture i {
     color: var(--color_lighter);
     position: absolute;
-    left: 39%;
-    display: none;
+    /* left: 39%;
+    display: none; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
 }
 
 #app_main .main_bottom .picture:hover img {
