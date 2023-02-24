@@ -740,7 +740,7 @@ li.logo img {
 }
 
 /* small height */
-@media screen and (max-height: 520px) {
+@media screen and (max-height: 520px), (orientation:landscape) {
 
     #app_main #playlist_side {
         display: none;
