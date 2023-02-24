@@ -152,7 +152,9 @@ p {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 #app_main .sidebar li {
@@ -372,6 +374,8 @@ li.logo img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: none;
+    cursor: pointer;
 }
 
 #app_main .main_bottom .picture:hover img {
@@ -732,6 +736,14 @@ li.logo img {
     #app_main .sidebar .download_icon,
     #app_main .sidebar .side_menu_bottom .user_pic {
         text-align: left;
+    }
+}
+
+/* small height */
+@media screen and (max-height: 520px) {
+
+    #app_main #playlist_side {
+        display: none;
     }
 }
 
