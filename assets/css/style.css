@@ -157,6 +157,7 @@ p {
 
 #app_main .sidebar li {
     padding: 0.25rem 0;
+    font-size: 0.9rem;
 }
 
 li.logo img {
@@ -178,6 +179,8 @@ li.logo img {
 #app_main .sidebar img {
     width: 25px;
     opacity: 0.5;
+    margin-right: 0.5rem;
+    vertical-align: bottom;
 }
 
 #app_main .side_menu_bottom {
@@ -204,6 +207,12 @@ li.logo img {
     background-color: gray;
     aspect-ratio: 1 / 1;
     width: 30px;
+    opacity: 1;
+}
+
+#app_main .sidebar li.user_pic a {
+    color: var(--color_lighter);
+    align-items: center;
 }
 
 /* sidebar for BIGGER SCREEN */
@@ -243,7 +252,13 @@ li.logo img {
 #app_main #add_playlist {
     color: var(--color_greylight);
     padding: 0.25rem 1rem;
+    align-items: center;
 }
+
+#app_main #add_playlist i {
+    padding-right: 0.5rem;
+}
+
 
 #app_main #add_playlist:hover {
     color: var(--color_lighter);
@@ -258,8 +273,7 @@ li.logo img {
 
 #app_main #list_playlist li {
     color: var(--color_greylight);
-    padding: 0.75rem 1rem;
-    font-size: 0.75rem;
+    padding: 0.5rem 1rem;
 }
 
 #app_main #list_playlist li:hover {
