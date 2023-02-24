@@ -159,9 +159,16 @@ p {
     padding: 0.25rem 0;
 }
 
-#app_main .sidebar li:hover a {
+li.logo img {
+    opacity: 1 !important;
+    cursor: auto !important;
+}
+
+#app_main .sidebar li:hover a,
+#app_main .sidebar li:hover img {
     color: var(--color_lighter);
     cursor: pointer;
+    opacity: 1;
 }
 
 #app_main .sidebar li a {
@@ -170,6 +177,7 @@ p {
 
 #app_main .sidebar img {
     width: 25px;
+    opacity: 0.5;
 }
 
 #app_main .side_menu_bottom {
@@ -334,6 +342,10 @@ p {
 #app_main .card p,
 #app_main .card h3 {
     cursor: pointer;
+}
+
+#app_main .card a:hover p {
+    text-decoration: underline;
 }
 
 /* recently */
