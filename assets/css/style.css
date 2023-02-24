@@ -364,17 +364,14 @@ li.logo img {
 
 #app_main .main_bottom .picture {
     position: relative;
-    align-items: center;
 }
 
 #app_main .main_bottom .picture i {
     color: var(--color_lighter);
     position: absolute;
-    /* left: 39%;
-    display: none; */
     top: 50%;
     left: 50%;
-    transform: translate(-50% -50%);
+    transform: translate(-50%, -50%);
 }
 
 #app_main .main_bottom .picture:hover img {
