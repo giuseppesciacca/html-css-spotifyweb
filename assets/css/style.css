@@ -210,7 +210,6 @@ li.logo img {
 #app_main .sidenav img {
     width: 25px;
     opacity: 0.5;
-    margin-right: 0.5rem;
     vertical-align: bottom;
 }
 
@@ -703,6 +702,10 @@ li.logo img {
 
     #app_main .sidenav {
         align-items: start;
+    }
+
+    #app_main .sidenav img {
+        margin-right: 0.5rem;
     }
 
     #app_main #xs_sidemenu_top {
